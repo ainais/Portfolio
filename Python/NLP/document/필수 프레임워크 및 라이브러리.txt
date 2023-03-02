@@ -1,0 +1,48 @@
+* 필수로 설치해야 할 라이브러리
+    1) pip install tensorflow 
+        1-1) 머신 러닝 오픈소스 프레임워크
+
+    2) pip install keras 
+        2-1) 딥 러닝 프레임워크인 텐서플로우에 대한 추상화 API
+
+    3) pip install gensim 
+        3-1) 머신러닝을 사용하여 토픽 모델링과 자연어 처리 등을 수행할 수 있게 해주는 오픈 소스 라이브러리
+
+    4) pip install scikit-learn
+        4-1) 나이브 베이즈 분류, 서포트 벡터 머신 등 다양한 머신 러닝 모듈을 불러 올 수 있는 라이브러리
+        4-2) 기본적인 학습데이터(붓꽃데이터, 당뇨병 데이터 등을 제공)
+
+    5) pip install jupyter
+        5-1) 웹에서 코드를 작성하고 실행할 수 있는 오픈소스 웹 어플리케이션
+        5-2) 실행하는 명령어 : jupyter notebook
+
+    6) pip install nltk
+        6-1) 자연어 처리를 위한 파이썬 패키지
+        6-2) nltk 기능을 실행하기 위해서는 반드시 nltk.download() 코드를 1번이상 수행해서 로컬에 사용 데이터를 다운로드해야한다.
+        6-3) 만약 nltk.download()명령어가 실행되지 않을 경우 nltk.download('treebank')로 실행
+        6-4) 6-3)도 오류가 생길 경우 https://github.com/nltk/nltk_data 깃허브에서 직접 다운로드
+
+    7) pip install konlpy 
+        7-1) 한국어 자연어 처리를 위한 형태소 분석 패키지
+        7-2) kolnpy에서 JPype와 충돌이 있을 수 있다. 그래서 JDK 1.7이상의 버전과 JPype가 설치되어야 한다.
+        7-3) JPype 설치 명령어 : pip install JPype1‑0.6.3‑cp36‑cp36m‑win_amd64.whl
+
+    8) pip install pandas
+        8-1) 파이썬 데이터 처리를 위한 라이브러리
+
+    9) pip install numpy
+        9-1) 수치 데이터를 다루는 파이썬 패키지. 
+        9-2) 다차원 행렬 자료구조인 ndarray를 통해 벡터 및 행렬을 사용하는 선형 대수 계산에 주로 사용.
+
+    10) pip install matplotlib
+        10-1) 데이터를 차트나 플롯으로 시각화하는 패키지
+
+    11) pip install pandas-profiling
+        11-1) 좋은 요리를 위해서는 조리 방법도 중요하지만, 그만큼 중요한 것은 갖고있는 재료의 상태입니다. 
+              재료가 상하거나 문제가 있다면 좋은 요리가 나올 수 없습니다. 
+              마찬가지로 좋은 머신 러닝 결과를 얻기 위해서는 데이터의 성격을 파악하는 과정이 선행되어야 합니다. 
+              이 과정에서 데이터 내 값의 분포, 변수 간의 관계, Null 값과 같은 결측값(missing values) 존재 유무 등을 파악하게 되는데
+              이와 같이 데이터를 파악하는 과정을 EDA(Exploratory Data Analysis, 탐색적 데이터 분석)이라고 합니다. 
+              이번에는 방대한 양의 데이터를 가진 데이터프레임을 .profile_report()라는 단 한 줄의 명령으로 탐색하는 패키지인 판다스 프로파일링(pandas-profiling)을 소개합니다.
+        11-2) pip install -U --pre pycaret 의 명령어 필요 
+              안그러면 ImportError: cannot import name 'soft_unicode' from 'markupsafe' 에러 발생
